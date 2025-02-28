@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 extension ColorExtension on String {
   Color? tryToColor() {
     final rgbRegex = RegExp(r'^rgb\((\d+),\s*(\d+),\s*(\d+)\)$');

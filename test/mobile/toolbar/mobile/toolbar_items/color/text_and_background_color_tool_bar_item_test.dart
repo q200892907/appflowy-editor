@@ -1,5 +1,6 @@
 import 'package:appflowy_editor/appflowy_editor.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../../../new/infra/testable_editor.dart';

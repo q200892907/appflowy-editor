@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:appflowy_editor/appflowy_editor.dart';
 import 'package:example/pages/desktop_editor.dart';
 import 'package:example/pages/mobile_editor.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 import 'package:universal_platform/universal_platform.dart';
 
 class Editor extends StatefulWidget {

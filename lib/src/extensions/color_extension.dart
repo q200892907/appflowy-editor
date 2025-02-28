@@ -1,5 +1,6 @@
 import 'package:flutter/painting.dart';
-
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 extension ColorExtension2 on Color {
   /// Try to parse the `rgba(red, greed, blue, alpha)`
   /// from the string.

@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:appflowy_editor/src/render/selection/selectable.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 
 class Cursor extends StatefulWidget {
   const Cursor({

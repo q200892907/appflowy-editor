@@ -1,5 +1,6 @@
 import 'package:appflowy_editor/src/editor_state.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Row,Column;
+import 'package:zino_compatible/zino_compatible.dart';
 
 class ContextMenuItem {
   ContextMenuItem({
