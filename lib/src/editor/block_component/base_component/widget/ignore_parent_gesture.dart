@@ -54,17 +54,17 @@ class _IgnoreEditorSelectionGestureState
   @override
   Widget build(BuildContext context) {
     return Listener(
-      onPointerDown: (event) {
-        final renderObject = context.findRenderObject();
-        // touch to clear
-        if (renderObject != null && renderObject is RenderBox) {
-          if (renderObject.paintBounds.contains(event.localPosition)) {
-            WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-              editorState.updateSelectionWithReason(null);
-            });
-          }
-        }
-      },
+      // onPointerDown: (event) {
+      //   final renderObject = context.findRenderObject();
+      //   // touch to clear
+      //   if (renderObject != null && renderObject is RenderBox) {
+      //     if (renderObject.paintBounds.contains(event.localPosition)) {
+      //       WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      //         editorState.updateSelectionWithReason(null);
+      //       });
+      //     }
+      //   }
+      // },
       child: widget.child,
     );
   }
